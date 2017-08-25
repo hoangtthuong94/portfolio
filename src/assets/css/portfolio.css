@@ -1,0 +1,76 @@
+.menu-homepage {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%); }
+  .menu-homepage li {
+    list-style-type: none; }
+    .menu-homepage li a {
+      display: block;
+      margin-left: -2px;
+      height: 50px;
+      width: 60px;
+      border-radius: 0 25px 25px 0;
+      border: 1px solid #000;
+      background: #FFF;
+      margin-bottom: 1em;
+      transition: all .4s ease;
+      color: #2980b9;
+      text-decoration: none;
+      line-height: 50px;
+      position: relative; }
+      .menu-homepage li a:hover {
+        cursor: pointer;
+        width: 170px;
+        color: #fff; }
+        .menu-homepage li a:hover span {
+          left: 0; }
+      .menu-homepage li a span {
+        padding: 0 20px 0 15px;
+        position: absolute;
+        left: -120px;
+        transition: left .4s ease; }
+      .menu-homepage li a i {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        font-size: 1.5em;
+        width: 30px;
+        display: inline-block;
+        text-align: center; }
+    .menu-homepage li .menu-intro {
+      background: rgba(39, 174, 96, 0.1);
+      border-color: #27ae60;
+      color: #27ae60; }
+      .menu-homepage li .menu-intro:hover {
+        background: #27ae60; }
+    .menu-homepage li .menu-about {
+      background: rgba(230, 126, 34, 0.1);
+      border-color: #e67e22;
+      color: #e67e22; }
+      .menu-homepage li .menu-about:hover {
+        background: #e67e22; }
+    .menu-homepage li .menu-tech {
+      background: rgba(34, 167, 240, 0.1);
+      border-color: #22A7F0;
+      color: #22A7F0; }
+      .menu-homepage li .menu-tech:hover {
+        background: #22a7f0; }
+    .menu-homepage li .menu-project {
+      background: rgba(210, 82, 127, 0.1);
+      border-color: #D2527F;
+      color: #D2527F; }
+      .menu-homepage li .menu-project:hover {
+        background: #d2527f; }
+    .menu-homepage li .menu-team {
+      background: rgba(34, 167, 240, 0.1);
+      border-color: #0df0ed;
+      color: #0df0ed; }
+      .menu-homepage li .menu-team:hover {
+        background: #22a7f0; }
+
+/*# sourceMappingURL=portfolio.css.map */
