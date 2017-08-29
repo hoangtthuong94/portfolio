@@ -1,3 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 .menu-homepage {
   margin: 0;
   padding: 0;
@@ -12,7 +53,7 @@
       display: block;
       margin-left: -2px;
       height: 50px;
-      width: 60px;
+      width: 50px;
       border-radius: 0 25px 25px 0;
       border: 1px solid #000;
       background: #FFF;
@@ -24,7 +65,7 @@
       position: relative; }
       .menu-homepage li a:hover {
         cursor: pointer;
-        width: 170px;
+        width: 160px;
         color: #fff; }
         .menu-homepage li a:hover span {
           left: 0; }
@@ -38,8 +79,8 @@
         top: 50%;
         right: 15px;
         transform: translateY(-50%);
-        font-size: 1.5em;
-        width: 30px;
+        font-size: 20px;
+        width: 25px;
         display: inline-block;
         text-align: center; }
     .menu-homepage li .menu-intro {
@@ -72,5 +113,160 @@
       color: #0df0ed; }
       .menu-homepage li .menu-team:hover {
         background: #22a7f0; }
+
+.block-mouse-scroll p {
+  margin-top: 20px;
+  font-family: "Cabin", sans-serif;
+  letter-spacing: 12px;
+  text-indent: 12px;
+  color: #ffffff;
+  animation: colorText 5s ease-out infinite, nudgeText 5s ease-out infinite; }
+.block-mouse-scroll .mouse {
+  background: #4e5559 linear-gradient(transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%);
+  position: relative;
+  margin: 0 auto;
+  width: 40px;
+  height: 70px;
+  background-size: 100% 100%;
+  border-radius: 100px;
+  background-size: 225%;
+  animation: colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite; }
+  .block-mouse-scroll .mouse:before, .block-mouse-scroll .mouse:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto; }
+  .block-mouse-scroll .mouse:before {
+    width: 34px;
+    height: 64px;
+    background-color: #222a30;
+    border-radius: 100px; }
+  .block-mouse-scroll .mouse:after {
+    background-color: #ffffff;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    animation: trackBallSlide 5s linear infinite; }
+@keyframes colorSlide {
+  0% {
+    background-position: 0% 100%; }
+  20% {
+    background-position: 0% 0%; }
+  21% {
+    background-color: #4e5559; }
+  29.99% {
+    background-color: #ffffff;
+    background-position: 0% 0%; }
+  30% {
+    background-color: #4e5559;
+    background-position: 0% 100%; }
+  50% {
+    background-position: 0% 0%; }
+  51% {
+    background-color: #4e5559; }
+  59.99% {
+    background-color: #ffffff;
+    background-position: 0% 0%; }
+  60% {
+    background-color: #4e5559;
+    background-position: 0% 100%; }
+  80% {
+    background-position: 0% 0%; }
+  81% {
+    background-color: #4e5559; }
+  89.99%, 100% {
+    background-color: #ffffff; } }
+@keyframes trackBallSlide {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(-16px); }
+  6% {
+    opacity: 1;
+    transform: scale(0.9) translateY(4px); }
+  14% {
+    opacity: 0;
+    transform: scale(0.4) translateY(32px); }
+  15%, 19% {
+    opacity: 0;
+    transform: scale(0.4) translateY(-16px); }
+  28%, 29.99% {
+    opacity: 1;
+    transform: scale(1) translateY(-16px); }
+  30% {
+    opacity: 1;
+    transform: scale(1) translateY(-16px); }
+  36% {
+    opacity: 1;
+    transform: scale(0.9) translateY(4px); }
+  44% {
+    opacity: 0;
+    transform: scale(0.4) translateY(32px); }
+  45%, 49% {
+    opacity: 0;
+    transform: scale(0.4) translateY(-16px); }
+  58%, 59.99% {
+    opacity: 1;
+    transform: scale(1) translateY(-16px); }
+  60% {
+    opacity: 1;
+    transform: scale(1) translateY(-16px); }
+  66% {
+    opacity: 1;
+    transform: scale(0.9) translateY(4px); }
+  74% {
+    opacity: 0;
+    transform: scale(0.4) translateY(32px); }
+  75%, 79% {
+    opacity: 0;
+    transform: scale(0.4) translateY(-16px); }
+  88%, 100% {
+    opacity: 1;
+    transform: scale(1) translateY(-16px); } }
+@keyframes nudgeMouse {
+  0% {
+    transform: translateY(0); }
+  20% {
+    transform: translateY(8px); }
+  30% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(8px); }
+  60% {
+    transform: translateY(0); }
+  80% {
+    transform: translateY(8px); }
+  90% {
+    transform: translateY(0); } }
+@keyframes nudgeText {
+  0% {
+    transform: translateY(0); }
+  20% {
+    transform: translateY(2px); }
+  30% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(2px); }
+  60% {
+    transform: translateY(0); }
+  80% {
+    transform: translateY(2px); }
+  90% {
+    transform: translateY(0); } }
+@keyframes colorText {
+  21% {
+    color: #4e5559; }
+  30% {
+    color: #ffffff; }
+  51% {
+    color: #4e5559; }
+  60% {
+    color: #ffffff; }
+  81% {
+    color: #4e5559; }
+  90% {
+    color: #ffffff; } }
 
 /*# sourceMappingURL=portfolio.css.map */
