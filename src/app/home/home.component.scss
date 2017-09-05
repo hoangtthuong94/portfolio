@@ -16,17 +16,48 @@ html {
   text-shadow: -0px 0px hsla(0, 0%, 100%, 0.03333), 0px -0px hsla(0, 0%, 0%, 0.2), -0.5px 0.5px hsla(0, 0%, 100%, 0.03333), 0.5px -0.5px hsla(0, 0%, 0%, 0.2), -1px 1px hsla(0, 0%, 100%, 0.03333), 1px -1px hsla(0, 0%, 0%, 0.2), -1.5px 1.5px hsla(0, 0%, 100%, 0.03333), 1.5px -1.5px hsla(0, 0%, 0%, 0.2), -2px 2px hsla(0, 0%, 100%, 0.03333), 2px -2px hsla(0, 0%, 0%, 0.2), 0px 0px 40px hsla(0, 0%, 100%, 0.1);
 }
 
-.sec-first{
+.clearfix {
+  &:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
+.sec-first {
   text-align: center;
-  .name-author{
+  .name-author {
     font-size: 20px;
-    font-family: 'Raleway', sans-serif;;
+    font-family: 'Raleway', sans-serif;
   }
 
-  .block-mouse-scroll{
+  .block-mouse-scroll {
     position: absolute;
-    bottom:0;
+    bottom: 0;
     padding-bottom: 20px;
     width: 100%;
+  }
+}
+
+.sec-about {
+  position: relative;
+  .sec-title, .sec-content {
+    width: 50%;
+    position: absolute;
+    top:0;
+    bottom:0
+  }
+  .sec-title {
+    background-color: #f7484e;
+    left: 0;
+  }
+
+  .sec-content {
+    right: 0;
+    padding: 96px;
+
+    p {
+      margin-bottom: 50px;
+    }
   }
 }

@@ -39,6 +39,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+* {
+  box-sizing: border-box; }
+
 .menu-homepage {
   margin: 0;
   padding: 0;
@@ -84,31 +87,31 @@ table {
         display: inline-block;
         text-align: center; }
     .menu-homepage li .menu-intro {
-      background: rgba(39, 174, 96, 0.1);
+      background: rgba(39, 174, 96, 0.2);
       border-color: #27ae60;
       color: #27ae60; }
       .menu-homepage li .menu-intro:hover {
         background: #27ae60; }
     .menu-homepage li .menu-about {
-      background: rgba(230, 126, 34, 0.1);
+      background: rgba(230, 126, 34, 0.2);
       border-color: #e67e22;
       color: #e67e22; }
       .menu-homepage li .menu-about:hover {
         background: #e67e22; }
     .menu-homepage li .menu-tech {
-      background: rgba(34, 167, 240, 0.1);
+      background: rgba(34, 167, 240, 0.2);
       border-color: #22A7F0;
       color: #22A7F0; }
       .menu-homepage li .menu-tech:hover {
         background: #22a7f0; }
     .menu-homepage li .menu-project {
-      background: rgba(210, 82, 127, 0.1);
+      background: rgba(210, 82, 127, 0.2);
       border-color: #D2527F;
       color: #D2527F; }
       .menu-homepage li .menu-project:hover {
         background: #d2527f; }
     .menu-homepage li .menu-team {
-      background: rgba(34, 167, 240, 0.1);
+      background: rgba(34, 167, 240, 0.2);
       border-color: #0df0ed;
       color: #0df0ed; }
       .menu-homepage li .menu-team:hover {
